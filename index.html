@@ -194,7 +194,7 @@ z-index: 10;
   <div id="vanta"></div>
     <div class="container">
         <div class="moon"></div>
-        <h1 class="title">Ramadan Countdown</h1>
+        <h1 class="title">ramadhan Countdown</h1>
         <div class="countdown">
             <div class="countdown-item">
                 <div class="number" id="days">00</div>
@@ -214,15 +214,15 @@ z-index: 10;
             </div>
         </div>
         <div class="message">
-            Ramadan akan tiba, insyaAllah 28 Februari 2025 🌙 ✨
+            ramadhan akan tiba, insyaAllah 28 Februari 2025 🌙 ✨
         </div>
     </div>
 
     <script>
         function updateCountdown() {
-            const ramadanDate = new Date('February 28, 2025 00:00:00').getTime();
+            const ramadhanDate = new Date('February 28, 2025 00:00:00').getTime();
             const now = new Date().getTime();
-            const distance = ramadanDate - now;
+            const distance = ramadhanDate - now;
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -236,7 +236,7 @@ z-index: 10;
 
             if (distance < 0) {
                 clearInterval(countdownInterval);
-                document.querySelector('.message').textContent = 'Ramadan Mubarak! 🌙';
+                document.querySelector('.message').textContent = 'ramadhan Mubarak! 🌙';
             }
         }
 
